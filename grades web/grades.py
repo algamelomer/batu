@@ -3,13 +3,13 @@ import os
 error=''
 def health_sciences(sitting_number):
     import pandas as pd
-    data=pd.read_excel("omarr.xlsx")#call excel file by URL
+    data=pd.read_excel("grades web/omarr.xlsx")#call excel file by URL
     df=pd.DataFrame(data) #excel frame data
     code=df["code"] #seating column
 
     #sitting_number ='' #the user enters the seat number
 
-    files=open("omarr.csv","r") #fil path & type = read -->"r"
+    files=open("grades web/omarr.csv","r") #fil path & type = read -->"r"
     raw_start=files.readline()
     start=raw_start.split(',')
     correct = False # If the answer is correct, it will be true
@@ -31,13 +31,13 @@ def health_sciences(sitting_number):
     
 def information_technology(sitting_number):
     import pandas as pd
-    data=pd.read_excel("test (2).xlsx")#call excel file by URL
+    data=pd.read_excel("grades web/test (2).xlsx")#call excel file by URL
     df=pd.DataFrame(data) #excel frame data
     code=df["code"] #seating column
 
     #sitting_number ='' #the user enters the seat number
 
-    files=open("test (1).csv","r") #fil path & type = read -->"r"
+    files=open("grades web/test (1).csv","r") #fil path & type = read -->"r"
     correct = False # If the answer is correct, it will be true
     wrong = True #If the answer is wrong, it will be true
     for file in files.readlines(): #loop reads a file "csv" line by line 
@@ -58,13 +58,13 @@ def information_technology(sitting_number):
 
 def railway(sitting_number):
     import pandas as pd
-    data=pd.read_excel("test (2).xlsx")#call excel file by URL
+    data=pd.read_excel("grades web/test (2).xlsx")#call excel file by URL
     df=pd.DataFrame(data) #excel frame data
     code=df["code"] #seating column
 
     #sitting_number ='' #the user enters the seat number
 
-    files=open("test (1).csv","r") #fil path & type = read -->"r"
+    files=open("grades web/test (1).csv","r") #fil path & type = read -->"r"
     correct = False # If the answer is correct, it will be true
     wrong = True #If the answer is wrong, it will be true
     for file in files.readlines(): #loop reads a file "csv" line by line 
@@ -85,13 +85,13 @@ def railway(sitting_number):
 
 def textiles(sitting_number):
     import pandas as pd
-    data=pd.read_excel("test (2).xlsx")#call excel file by URL
+    data=pd.read_excel("grades web/test (2).xlsx")#call excel file by URL
     df=pd.DataFrame(data) #excel frame data
     code=df["code"] #seating column
 
     #sitting_number ='' #the user enters the seat number
 
-    files=open("test (1).csv","r") #fil path & type = read -->"r"
+    files=open("grades web/test (1).csv","r") #fil path & type = read -->"r"
     correct = False # If the answer is correct, it will be true
     wrong = True #If the answer is wrong, it will be true
     for file in files.readlines(): #loop reads a file "csv" line by line 
@@ -112,13 +112,13 @@ def textiles(sitting_number):
 
 def tractors_and_argricultural_equipment(sitting_number):
     import pandas as pd
-    data=pd.read_excel("test (2).xlsx")#call excel file by URL
+    data=pd.read_excel("grades web/test (2).xlsx")#call excel file by URL
     df=pd.DataFrame(data) #excel frame data
     code=df["code"] #seating column
 
     #sitting_number ='' #the user enters the seat number
 
-    files=open("test (1).csv","r") #fil path & type = read -->"r"
+    files=open("grades web/test (1).csv","r") #fil path & type = read -->"r"
     correct = False # If the answer is correct, it will be true
     wrong = True #If the answer is wrong, it will be true
     for file in files.readlines(): #loop reads a file "csv" line by line 
@@ -174,7 +174,7 @@ class sitting_code:
             sci_code=sci_sitting_number(sitting_num)
             def it_sitting_number(sitting_number):    
                 import pandas as pd
-                data=pd.read_excel("omarr.xlsx")#call excel file by URL
+                data=pd.read_excel("grades web/omarr.xlsx")#call excel file by URL
                 df=pd.DataFrame(data) #excel frame data
                 code=df["code"] #seating column
                 it_code=False
@@ -186,7 +186,7 @@ class sitting_code:
             it_code=it_sitting_number(sitting_num)
             def rw_sitting_number(sitting_number):    
                 import pandas as pd
-                data=pd.read_excel("test (2).xlsx")#call excel file by URL
+                data=pd.read_excel("grades web/test (2).xlsx")#call excel file by URL
                 df=pd.DataFrame(data) #excel frame data
                 code=df["code"] #seating column
                 rw_code=False
@@ -198,7 +198,7 @@ class sitting_code:
             rw_code=rw_sitting_number(sitting_num)
             def sw_sitting_number(sitting_number):    
                 import pandas as pd
-                data=pd.read_excel("test (2).xlsx")#call excel file by URL
+                data=pd.read_excel("grades web/test (2).xlsx")#call excel file by URL
                 df=pd.DataFrame(data) #excel frame data
                 code=df["code"] #seating column
                 sw_code=False
@@ -210,7 +210,7 @@ class sitting_code:
             sw_code=sw_sitting_number(sitting_num)
             def tae_sitting_number(sitting_number):    
                 import pandas as pd
-                data=pd.read_excel("test (2).xlsx")#call excel file by URL
+                data=pd.read_excel("grades web/test (2).xlsx")#call excel file by URL
                 df=pd.DataFrame(data) #excel frame data
                 code=df["code"] #seating column
                 tae_code=False
