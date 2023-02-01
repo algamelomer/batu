@@ -244,4 +244,4 @@ class sitting_code:
                 return render_template('/index.html',error='please recheck your sitting number or college', logo=full_filename)#i need to work in this cause it doesnt work
 
 if __name__=='__main__':    
-    app.run(debug=True)#aka needed to run the server
+    app.run(host='0.0.0.0')#aka needed to run the server
